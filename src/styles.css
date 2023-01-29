@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: "Futura", sans-serif;
+}
+
+:root {
+    --h1-color: #20509e;
+    --h1-responsive-color: white;
+    --mode-icon-color: #eff3f5;
+    --mode-active-icon: #16d0c5;
+    --bg-color: #eff3f5;
+    --card-color: white;
+    --input-color: #1e1e1f;
+    --select-color: #1e1e1f;
+    --option-bg-color: white;
+    --change-color: #16d0c5;
+    --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --i-background-color: rgb(217, 243, 255);
+}
+
+/* .dark{
+    --h1-color: #e3e7e9;
+    --h1-responsive-color: #e3e7e9;
+    --mode-icon-color: #1a1c1f;
+    --mode-active-icon: #4b5a6b;
+    --bg-color: #1a1c1f;
+    --card-color: #262d35;
+    --input-color: #e3e7e9;
+    --select-color: #e3e7e9;
+    --option-bg-color: #262d35;
+    --change-color: #16d0c5;
+    --box-shadow: rgba(12, 12, 12, 0.2) 0px 2px 8px 0px;
+    --i-background-color: rgb(46, 62, 73);
+} */
