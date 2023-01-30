@@ -16,34 +16,28 @@ export class AppComponent implements OnInit {
   getTheme() {
     let theme = localStorage.getItem('theme');
     this.theme = theme === 'true' ? true : false;
-    document.documentElement.style.setProperty('--h1-color', this.theme ? '#20509e' : '#e3e7e9')
-    document.documentElement.style.setProperty('--h1-responsive-color', this.theme ? 'white' : '#e3e7e9')
-    document.documentElement.style.setProperty('--mode-icon-color', this.theme ? '#eff3f5' : '#1a1c1f')
-    document.documentElement.style.setProperty('--mode-active-icon', this.theme ? '#16d0c5' : '#4b5a6b')
-    document.documentElement.style.setProperty('--bg-color', this.theme ? '#eff3f5' : '#1a1c1f')
-    document.documentElement.style.setProperty('--card-color', this.theme ? 'white' : '#262d35')
-    document.documentElement.style.setProperty('--input-color', this.theme ? '#1e1e1f' : '#e3e7e9')
-    document.documentElement.style.setProperty('--select-color', this.theme ? '#1e1e1f' : '#e3e7e9')
-    document.documentElement.style.setProperty('--option-bg-color', this.theme ? 'white' : '#262d35')
-    document.documentElement.style.setProperty('--change-color', this.theme ? '#16d0c5' : '#16d0c5')
-    document.documentElement.style.setProperty('--box-shadow', this.theme ? 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px' : 'rgba(12, 12, 12, 0.2) 0px 2px 8px 0px')
-    document.documentElement.style.setProperty('--i-background-color', this.theme ? 'rgb(217, 243, 255)' : 'rgb(46, 62, 73)')
+    document.documentElement.style.setProperty('--color0', this.theme ? 'white' : '#e3e7e9')
+    document.documentElement.style.setProperty('--color1', this.theme ? '#20509e' : '#e3e7e9')
+    document.documentElement.style.setProperty('--color2', this.theme ? 'white' : '#262d35')
+    document.documentElement.style.setProperty('--color3', this.theme ? '#eff3f5' : '#1a1c1f')
+    document.documentElement.style.setProperty('--color4', this.theme ? '#1e1e1f' : '#e3e7e9')
+    document.documentElement.style.setProperty('--color5', this.theme ? '#16d0c5' : '#16d0c5')
+    document.documentElement.style.setProperty('--color6', this.theme ? 'white' : '#262d35')
+    document.documentElement.style.setProperty('--color7', this.theme ? 'rgb(217, 243, 255)' : 'rgb(46, 62, 73)')
+    document.documentElement.style.setProperty('--color8', this.theme ? 'rgba(78, 78, 78, 0.2) 0px 2px 8px 0px' : 'rgba(12, 12, 12, 0.2) 0px 2px 8px 0px')
   }
 
   changeTheme(){
     this.theme = !this.theme
-    document.documentElement.style.setProperty('--h1-color', this.theme ? '#20509e' : '#e3e7e9')
-    document.documentElement.style.setProperty('--h1-responsive-color', this.theme ? 'white' : '#e3e7e9')
-    document.documentElement.style.setProperty('--mode-icon-color', this.theme ? '#eff3f5' : '#1a1c1f')
-    document.documentElement.style.setProperty('--mode-active-icon', this.theme ? '#16d0c5' : '#4b5a6b')
-    document.documentElement.style.setProperty('--bg-color', this.theme ? '#eff3f5' : '#1a1c1f')
-    document.documentElement.style.setProperty('--card-color', this.theme ? 'white' : '#262d35')
-    document.documentElement.style.setProperty('--input-color', this.theme ? '#1e1e1f' : '#e3e7e9')
-    document.documentElement.style.setProperty('--select-color', this.theme ? '#1e1e1f' : '#e3e7e9')
-    document.documentElement.style.setProperty('--option-bg-color', this.theme ? 'white' : '#262d35')
-    document.documentElement.style.setProperty('--change-color', this.theme ? '#16d0c5' : '#16d0c5')
-    document.documentElement.style.setProperty('--box-shadow', this.theme ? 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px' : 'rgba(12, 12, 12, 0.2) 0px 2px 8px 0px')
-    document.documentElement.style.setProperty('--i-background-color', this.theme ? 'rgb(217, 243, 255)' : 'rgb(46, 62, 73)')
+    document.documentElement.style.setProperty('--color0', this.theme ? 'white' : '#e3e7e9')
+    document.documentElement.style.setProperty('--color1', this.theme ? '#20509e' : '#e3e7e9')
+    document.documentElement.style.setProperty('--color2', this.theme ? 'white' : '#262d35')
+    document.documentElement.style.setProperty('--color3', this.theme ? '#eff3f5' : '#1a1c1f')
+    document.documentElement.style.setProperty('--color4', this.theme ? '#1e1e1f' : '#e3e7e9')
+    document.documentElement.style.setProperty('--color5', this.theme ? '#16d0c5' : '#16d0c5')
+    document.documentElement.style.setProperty('--color6', this.theme ? 'white' : '#262d35')
+    document.documentElement.style.setProperty('--color7', this.theme ? 'rgb(217, 243, 255)' : 'rgb(46, 62, 73)')
+    document.documentElement.style.setProperty('--color8', this.theme ? 'rgba(78, 78, 78, 0.2) 0px 2px 8px 0px' : 'rgba(12, 12, 12, 0.2) 0px 2px 8px 0px')
     localStorage.setItem('theme', this.theme.toString())
   }
 

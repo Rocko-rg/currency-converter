@@ -1,6 +1,5 @@
 
-
-nav{
+ nav{
     width: 100%;
     height: 60px;
     min-height: 60px;
@@ -10,11 +9,11 @@ nav{
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--color8);
     box-sizing: border-box;
 }
 h1{
-    color: var(--h1-color);
+    color: var(--color1);
     font-size: 22px;
     margin: 0;
 }
@@ -22,14 +21,14 @@ nav div{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--mode-icon-color);
+    border: 1px solid var(--color3);
     border-radius: 25px;
 
 }
 #sun, #moon{
     width: 24px;
     height: 24px;
-    color: var(--mode-icon-color);
+    color: var(--color3);
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -40,10 +39,12 @@ nav div{
     transition: 0.2s;
 }
 .sun{
-    background-color: var(--mode-active-icon);
+    background-color: var(--color2);
+    color: #41b5b9 !important;
 }
 .moon{
-    background-color: var(--mode-active-icon);
+    background-color: var(--color2);
+    color: #41b5b9 !important;
 }
 
 
@@ -52,7 +53,7 @@ nav div{
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: var(--color3);
     background-image: url('../assets/bg-back1.png');
     background-size: 130%;
     background-position: 65% 0%;
@@ -67,8 +68,8 @@ nav div{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--card-color);
-    box-shadow: var(--box-shadow);
+    background-color: var(--color6);
+    box-shadow: var(--color8);
  }
 .c{
     display: flex;
@@ -91,7 +92,7 @@ input{
     width: 139px;
     border: none;
     outline: none;
-    color: var(--input-color);
+    color: var(--color4);
     background-color: rgba(255, 255, 255, 0);
     padding: 10px;
     box-sizing: border-box;
@@ -115,7 +116,7 @@ select{
     background-color: rgba(255, 255, 255, 0);
     border: none;
     outline: none;
-    color: var(--select-color);
+    color: var(--color4);
     text-align: center;
     box-sizing: border-box;
     margin: 0 2px;
@@ -123,7 +124,7 @@ select{
     appearance: none;
 }
 option{
-    background-color: var(--option-bg-color);
+    background-color: var(--color6);
 }
 .card i{
     rotate: 90deg;
@@ -133,18 +134,18 @@ option{
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    color: var(--change-color);
+    color: var(--color5);
     cursor: pointer;
     transition: 0.2s;
 }
 .card i:hover{
-    background-color: var(--i-background-color);
+    background-color: var(--color7);
     border-radius: 25px;
 }
 
 @media screen and (max-width: 576px) {
     h1{
-        color: var(--h1-responsive-color);
+        color: var(--color0);
         font-size: 20px;
         margin: 0;
     }
@@ -180,5 +181,3 @@ option{
         width: 100%;
     }
 }
-
-
